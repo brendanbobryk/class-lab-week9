@@ -5,12 +5,10 @@ import java.util.*;
 
 public class App {
 
-    /*
-     * STUDENTS NEED TO CHANGE THE PATH TO POINT TO THE DATA FILE ON THEIR LAPTOPS
-     */
+    // Full file:
     // private static String dataFilePath =
-    // "/Users/jerom/Documents/GitHub/class-java/stack-lab/demo/src/main/java/com/example/socksTestData.json";
-
+    // "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTestData.json";
+    // Test file:
     private static String dataFilePath = "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTest7.json";
 
     public static SinglyLinkedList process(SinglyLinkedList input) {
