@@ -1,0 +1,40 @@
+{
+  "tests": [
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Frida Street",
+          "distance": 12.113858,
+          "next": {
+            "turnRight": true,
+            "street": "Yolando Street",
+            "distance": 3.3798723,
+            "next": {
+              "turnRight": true,
+              "street": "Erline Street",
+              "distance": 12.994869,
+              "next": {
+                "turnRight": true,
+                "street": "Jaymie Street",
+                "distance": 1.0383953
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": false,
+          "street": "Yolando Street",
+          "distance": 3.3798723,
+          "next": {
+            "turnRight": false,
+            "street": "Frida Street",
+            "distance": 12.113858
+          }
+        }
+      }
+    }
+  ]
+}

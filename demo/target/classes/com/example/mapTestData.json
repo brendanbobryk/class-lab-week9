@@ -1,0 +1,547 @@
+{
+  "tests": [
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Nidia Street",
+          "distance": 9.410869,
+          "next": {
+            "turnRight": true,
+            "street": "Logan Street",
+            "distance": 3.3657744,
+            "next": {
+              "turnRight": true,
+              "street": "Dylan Street",
+              "distance": 11.74135,
+              "next": {
+                "turnRight": true,
+                "street": "Wilbert Street",
+                "distance": 3.109949,
+                "next": {
+                  "turnRight": true,
+                  "street": "Sid Street",
+                  "distance": 0.8724131,
+                  "next": {
+                    "turnRight": true,
+                    "street": "Edda Street",
+                    "distance": 3.3631759,
+                    "next": {
+                      "turnRight": false,
+                      "street": "Olin Street",
+                      "distance": 11.178012,
+                      "next": {
+                        "turnRight": true,
+                        "street": "Mel Street",
+                        "distance": 0.3234238,
+                        "next": {
+                          "turnRight": true,
+                          "street": "Vinnie Street",
+                          "distance": 2.3807275,
+                          "next": {
+                            "turnRight": true,
+                            "street": "Hang Street",
+                            "distance": 8.696554
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": false,
+          "street": "Sid Street",
+          "distance": 0.8724131,
+          "next": {
+            "turnRight": false,
+            "street": "Wilbert Street",
+            "distance": 3.109949,
+            "next": {
+              "turnRight": false,
+              "street": "Dylan Street",
+              "distance": 11.74135,
+              "next": {
+                "turnRight": false,
+                "street": "Logan Street",
+                "distance": 3.3657744,
+                "next": {
+                  "turnRight": false,
+                  "street": "Nidia Street",
+                  "distance": 9.410869
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": false,
+          "street": "Kimberely Street",
+          "distance": 1.6153986,
+          "next": {
+            "turnRight": true,
+            "street": "Grant Street",
+            "distance": 7.926274,
+            "next": {
+              "turnRight": false,
+              "street": "Tyrone Street",
+              "distance": 3.039272,
+              "next": {
+                "turnRight": true,
+                "street": "Holley Street",
+                "distance": 6.5149164,
+                "next": {
+                  "turnRight": true,
+                  "street": "Aundrea Street",
+                  "distance": 9.078756,
+                  "next": {
+                    "turnRight": false,
+                    "street": "Romana Street",
+                    "distance": 10.771105
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": true,
+          "street": "Tyrone Street",
+          "distance": 3.039272,
+          "next": {
+            "turnRight": false,
+            "street": "Grant Street",
+            "distance": 7.926274,
+            "next": {
+              "turnRight": true,
+              "street": "Kimberely Street",
+              "distance": 1.6153986
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": false,
+          "street": "Caryn Street",
+          "distance": 7.3426757,
+          "next": {
+            "turnRight": true,
+            "street": "Darrell Street",
+            "distance": 5.758075,
+            "next": {
+              "turnRight": false,
+              "street": "Arnoldo Street",
+              "distance": 0.9554352,
+              "next": {
+                "turnRight": true,
+                "street": "Rikki Street",
+                "distance": 5.705496,
+                "next": {
+                  "turnRight": false,
+                  "street": "Luis Street",
+                  "distance": 5.4970245,
+                  "next": {
+                    "turnRight": true,
+                    "street": "Clarita Street",
+                    "distance": 1.1781316,
+                    "next": {
+                      "turnRight": true,
+                      "street": "Lang Street",
+                      "distance": 4.8863177,
+                      "next": {
+                        "turnRight": false,
+                        "street": "Kori Street",
+                        "distance": 5.479441,
+                        "next": {
+                          "turnRight": true,
+                          "street": "Leatha Street",
+                          "distance": 3.4590816,
+                          "next": {
+                            "turnRight": false,
+                            "street": "Marquitta Street",
+                            "distance": 10.363537
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": true,
+          "street": "Luis Street",
+          "distance": 5.4970245,
+          "next": {
+            "turnRight": false,
+            "street": "Rikki Street",
+            "distance": 5.705496,
+            "next": {
+              "turnRight": true,
+              "street": "Arnoldo Street",
+              "distance": 0.9554352,
+              "next": {
+                "turnRight": false,
+                "street": "Darrell Street",
+                "distance": 5.758075,
+                "next": {
+                  "turnRight": true,
+                  "street": "Caryn Street",
+                  "distance": 7.3426757
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Laurine Street",
+          "distance": 10.460702,
+          "next": {
+            "turnRight": false,
+            "street": "Ernestina Street",
+            "distance": 2.9029343,
+            "next": {
+              "turnRight": true,
+              "street": "Clark Street",
+              "distance": 3.9888594,
+              "next": {
+                "turnRight": true,
+                "street": "Matilda Street",
+                "distance": 9.022099,
+                "next": {
+                  "turnRight": true,
+                  "street": "Doug Street",
+                  "distance": 7.1196413,
+                  "next": {
+                    "turnRight": true,
+                    "street": "Rick Street",
+                    "distance": 2.7863598,
+                    "next": {
+                      "turnRight": true,
+                      "street": "Barrett Street",
+                      "distance": 8.126694,
+                      "next": {
+                        "turnRight": true,
+                        "street": "Clyde Street",
+                        "distance": 9.58186,
+                        "next": {
+                          "turnRight": true,
+                          "street": "Hipolito Street",
+                          "distance": 5.9264927,
+                          "next": {
+                            "turnRight": false,
+                            "street": "Lee Street",
+                            "distance": 6.9912596
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": false,
+          "street": "Doug Street",
+          "distance": 7.1196413,
+          "next": {
+            "turnRight": false,
+            "street": "Matilda Street",
+            "distance": 9.022099,
+            "next": {
+              "turnRight": false,
+              "street": "Clark Street",
+              "distance": 3.9888594,
+              "next": {
+                "turnRight": true,
+                "street": "Ernestina Street",
+                "distance": 2.9029343,
+                "next": {
+                  "turnRight": false,
+                  "street": "Laurine Street",
+                  "distance": 10.460702
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": false,
+          "street": "Andrew Street",
+          "distance": 0.4881829,
+          "next": {
+            "turnRight": true,
+            "street": "Julius Street",
+            "distance": 13.182723,
+            "next": {
+              "turnRight": false,
+              "street": "Maryanne Street",
+              "distance": 7.879438,
+              "next": {
+                "turnRight": false,
+                "street": "Kandace Street",
+                "distance": 4.6482644,
+                "next": {
+                  "turnRight": true,
+                  "street": "Doris Street",
+                  "distance": 0.60937333,
+                  "next": {
+                    "turnRight": true,
+                    "street": "Santos Street",
+                    "distance": 3.8001287,
+                    "next": {
+                      "turnRight": true,
+                      "street": "Annelle Street",
+                      "distance": 12.722401,
+                      "next": {
+                        "turnRight": true,
+                        "street": "Mika Street",
+                        "distance": 8.6326
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": true,
+          "street": "Kandace Street",
+          "distance": 4.6482644,
+          "next": {
+            "turnRight": true,
+            "street": "Maryanne Street",
+            "distance": 7.879438,
+            "next": {
+              "turnRight": false,
+              "street": "Julius Street",
+              "distance": 13.182723,
+              "next": {
+                "turnRight": true,
+                "street": "Andrew Street",
+                "distance": 0.4881829
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Tessa Street",
+          "distance": 9.295467,
+          "next": {
+            "turnRight": false,
+            "street": "Sarina Street",
+            "distance": 12.796685,
+            "next": {
+              "turnRight": true,
+              "street": "Kary Street",
+              "distance": 5.5734997,
+              "next": {
+                "turnRight": true,
+                "street": "Kate Street",
+                "distance": 2.5831995,
+                "next": {
+                  "turnRight": true,
+                  "street": "Clair Street",
+                  "distance": 6.480453,
+                  "next": {
+                    "turnRight": true,
+                    "street": "Ilona Street",
+                    "distance": 8.162599,
+                    "next": {
+                      "turnRight": true,
+                      "street": "Angelo Street",
+                      "distance": 3.4148767,
+                      "next": {
+                        "turnRight": true,
+                        "street": "Kirby Street",
+                        "distance": 5.3854995,
+                        "next": {
+                          "turnRight": true,
+                          "street": "Amos Street",
+                          "distance": 12.0612755,
+                          "next": {
+                            "turnRight": true,
+                            "street": "Tasha Street",
+                            "distance": 4.830562
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": false,
+          "street": "Clair Street",
+          "distance": 6.480453,
+          "next": {
+            "turnRight": false,
+            "street": "Kate Street",
+            "distance": 2.5831995,
+            "next": {
+              "turnRight": false,
+              "street": "Kary Street",
+              "distance": 5.5734997,
+              "next": {
+                "turnRight": true,
+                "street": "Sarina Street",
+                "distance": 12.796685,
+                "next": {
+                  "turnRight": false,
+                  "street": "Tessa Street",
+                  "distance": 9.295467
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Quentin Street",
+          "distance": 6.3188877,
+          "next": {
+            "turnRight": false,
+            "street": "Cristopher Street",
+            "distance": 7.746606,
+            "next": {
+              "turnRight": true,
+              "street": "Sherley Street",
+              "distance": 3.8157077,
+              "next": {
+                "turnRight": false,
+                "street": "Louis Street",
+                "distance": 4.0232563,
+                "next": {
+                  "turnRight": true,
+                  "street": "Shanell Street",
+                  "distance": 13.401604,
+                  "next": {
+                    "turnRight": false,
+                    "street": "Onie Street",
+                    "distance": 0.82254076,
+                    "next": {
+                      "turnRight": true,
+                      "street": "Ollie Street",
+                      "distance": 3.1489294,
+                      "next": {
+                        "turnRight": true,
+                        "street": "Rosita Street",
+                        "distance": 6.60296
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": true,
+          "street": "Louis Street",
+          "distance": 4.0232563,
+          "next": {
+            "turnRight": false,
+            "street": "Sherley Street",
+            "distance": 3.8157077,
+            "next": {
+              "turnRight": true,
+              "street": "Cristopher Street",
+              "distance": 7.746606,
+              "next": {
+                "turnRight": false,
+                "street": "Quentin Street",
+                "distance": 6.3188877
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "head": {
+          "turnRight": true,
+          "street": "Frida Street",
+          "distance": 12.113858,
+          "next": {
+            "turnRight": true,
+            "street": "Yolando Street",
+            "distance": 3.3798723,
+            "next": {
+              "turnRight": true,
+              "street": "Erline Street",
+              "distance": 12.994869,
+              "next": {
+                "turnRight": true,
+                "street": "Jaymie Street",
+                "distance": 1.0383953
+              }
+            }
+          }
+        }
+      },
+      "output": {
+        "head": {
+          "turnRight": false,
+          "street": "Yolando Street",
+          "distance": 3.3798723,
+          "next": {
+            "turnRight": false,
+            "street": "Frida Street",
+            "distance": 12.113858
+          }
+        }
+      }
+    }
+  ]
+}
