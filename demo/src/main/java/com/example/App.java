@@ -31,6 +31,7 @@ public class App {
         curr = answer.head;
         int counter2 = 0;
         while (curr != null) {
+            curr.turnRight = curr.turnRight ? false : true;
             next = curr.next;
             curr.next = prev;
             prev = curr;
