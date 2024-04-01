@@ -6,10 +6,10 @@ import java.util.*;
 public class App {
 
     // Full file:
-    // private static String dataFilePath =
-    // "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTestData.json";
+    private static String dataFilePath = "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTestData.json";
     // Test file:
-    private static String dataFilePath = "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTest7.json";
+    // private static String dataFilePath =
+    // "C:/Users/Brendan/Documents/GitHub/class-lab-week9/demo/src/main/java/com/example/mapTest7.json";
 
     public static SinglyLinkedList process(SinglyLinkedList input) {
         SinglyLinkedList answer = new SinglyLinkedList();
@@ -19,31 +19,28 @@ public class App {
          */
 
         LinkedListNode curr = input.head;
-        int count = 0;
+        int counter1 = 0;
         while (curr != null) {
             answer.insert(curr.turnRight, curr.street, curr.distance);
             curr = curr.next;
-            count++;
+            counter1++;
         }
-        int halfway = count / 2;
+        int halfway = counter1 / 2;
         LinkedListNode prev = null;
         LinkedListNode next = null;
         curr = answer.head;
+        int counter2 = 0;
         while (curr != null) {
             next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
+            counter2++;
+            if (counter2 == halfway) {
+                break;
+            }
         }
         answer.head = prev;
-        curr = answer.head;
-        System.out.println("Start");
-        while (curr != null) {
-            System.out.println(curr);
-            curr = curr.next;
-        }
-        System.out.println("End");
-
         //
         /*
          * STUDENTS DO NOT NEED TO EDIT ANY CODE AFTER THIS
