@@ -18,16 +18,33 @@ public class App {
          * STUDENTS NEED TO ADD/EDIT CODE STARTING HERE
          */
 
-        // This is example code that can be deleted to help you get started.
-        // Here I am simply traversing the list and copying the input list to the output
-        // answer list.
-        // Students code needs to do something different.
         LinkedListNode curr = input.head;
+        int count = 0;
         while (curr != null) {
             answer.insert(curr.turnRight, curr.street, curr.distance);
             curr = curr.next;
+            count++;
         }
+        int halfway = count / 2;
+        LinkedListNode prev = null;
+        LinkedListNode next = null;
+        curr = answer.head;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        answer.head = prev;
+        curr = answer.head;
+        System.out.println("Start");
+        while (curr != null) {
+            System.out.println(curr);
+            curr = curr.next;
+        }
+        System.out.println("End");
 
+        //
         /*
          * STUDENTS DO NOT NEED TO EDIT ANY CODE AFTER THIS
          */
